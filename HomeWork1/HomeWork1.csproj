@@ -125,14 +125,14 @@
     <Content Include="Content\Images\staff-2.jpg" />
     <Content Include="Content\Images\staff-3.jpg" />
     <Content Include="Content\Images\staff-4.jpg" />
-    <Content Include="fonts\flaticon\backup.txt" />
-    <Content Include="fonts\flaticon\font\flaticon.css" />
-    <Content Include="fonts\flaticon\font\flaticon.html" />
-    <Content Include="fonts\flaticon\font\Flaticon.svg" />
-    <Content Include="fonts\icomoon\icomoon.svg" />
-    <Content Include="fonts\ionicons\css\ionicons.min.css" />
-    <Content Include="fonts\ionicons\fonts\ionicons.svg" />
-    <Content Include="fonts\open-iconic\open-iconic.svg" />
+    <Content Include="Fonts\flaticon\backup.txt" />
+    <Content Include="Fonts\flaticon\font\flaticon.css" />
+    <Content Include="Fonts\flaticon\font\flaticon.html" />
+    <Content Include="Fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Fonts\icomoon\icomoon.svg" />
+    <Content Include="Fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="Fonts\open-iconic\open-iconic.svg" />
     <Content Include="Global.asax" />
     <Content Include="script\aos.js" />
     <Content Include="script\bootstrap.min.js" />
@@ -153,6 +153,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -160,28 +161,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="fonts\flaticon\.DS_Store" />
-    <Content Include="fonts\flaticon\font\.DS_Store" />
-    <Content Include="fonts\flaticon\font\Flaticon.eot" />
-    <Content Include="fonts\flaticon\font\Flaticon.ttf" />
-    <Content Include="fonts\flaticon\font\Flaticon.woff" />
-    <Content Include="fonts\flaticon\font\Flaticon.woff2" />
-    <Content Include="fonts\flaticon\font\_flaticon.scss" />
-    <Content Include="fonts\flaticon\license\license.pdf" />
-    <Content Include="fonts\icomoon\icomoon.eot" />
-    <Content Include="fonts\icomoon\icomoon.ttf" />
-    <Content Include="fonts\icomoon\icomoon.woff" />
-    <Content Include="fonts\ionicons\css\_ionicons.scss" />
-    <Content Include="fonts\ionicons\fonts\.DS_Store" />
-    <Content Include="fonts\ionicons\fonts\ionicons.eot" />
-    <Content Include="fonts\ionicons\fonts\ionicons.ttf" />
-    <Content Include="fonts\ionicons\fonts\ionicons.woff" />
-    <Content Include="fonts\ionicons\fonts\ionicons.woff2" />
-    <Content Include="fonts\open-iconic\open-iconic.eot" />
-    <Content Include="fonts\open-iconic\open-iconic.otf" />
-    <Content Include="fonts\open-iconic\open-iconic.ttf" />
-    <Content Include="fonts\open-iconic\open-iconic.woff" />
+    <Content Include="Fonts\flaticon\.DS_Store" />
+    <Content Include="Fonts\flaticon\font\.DS_Store" />
+    <Content Include="Fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="Fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="Fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="Fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="Fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="Fonts\flaticon\license\license.pdf" />
+    <Content Include="Fonts\icomoon\icomoon.eot" />
+    <Content Include="Fonts\icomoon\icomoon.ttf" />
+    <Content Include="Fonts\icomoon\icomoon.woff" />
+    <Content Include="Fonts\ionicons\css\_ionicons.scss" />
+    <Content Include="Fonts\ionicons\fonts\.DS_Store" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="Fonts\ionicons\fonts\ionicons.woff2" />
+    <Content Include="Fonts\open-iconic\open-iconic.eot" />
+    <Content Include="Fonts\open-iconic\open-iconic.otf" />
+    <Content Include="Fonts\open-iconic\open-iconic.ttf" />
+    <Content Include="Fonts\open-iconic\open-iconic.woff" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -191,7 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

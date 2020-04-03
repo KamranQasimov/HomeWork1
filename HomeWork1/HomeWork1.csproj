@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -103,10 +110,19 @@
     <Content Include="Content\css\owl.carousel.min.css" />
     <Content Include="Content\css\owl.theme.default.min.css" />
     <Content Include="Content\css\style.css" />
+    <Content Include="Content\Fonts\flaticon\backup.txt" />
+    <Content Include="Content\Fonts\flaticon\font\flaticon.css" />
+    <Content Include="Content\Fonts\flaticon\font\flaticon.html" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Content\Fonts\icomoon\icomoon.svg" />
+    <Content Include="Content\Fonts\ionicons\css\ionicons.min.css" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.svg" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.svg" />
     <Content Include="Content\Images\about.jpg" />
     <Content Include="Content\Images\bg_1.jpg" />
     <Content Include="Content\Images\bg_1.png" />
     <Content Include="Content\Images\bg_2.png" />
+    <Content Include="Content\Images\hotpng.com.png" />
     <Content Include="Content\Images\image_1.jpg" />
     <Content Include="Content\Images\image_2.jpg" />
     <Content Include="Content\Images\image_3.jpg" />
@@ -154,9 +170,21 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Data\Author.cs" />
+    <Compile Include="Data\BlogDbContext.cs" />
+    <Compile Include="Data\Menu.cs" />
+    <Compile Include="Data\Project.cs" />
+    <Compile Include="Data\Resume.cs" />
+    <Compile Include="Data\Services.cs" />
+    <Compile Include="Data\Skill.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004032253101_Initial.cs" />
+    <Compile Include="Migrations\202004032253101_Initial.designer.cs">
+      <DependentUpon>202004032253101_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +210,27 @@
     <Content Include="Fonts\open-iconic\open-iconic.otf" />
     <Content Include="Fonts\open-iconic\open-iconic.ttf" />
     <Content Include="Fonts\open-iconic\open-iconic.woff" />
+    <Content Include="Content\Fonts\flaticon\.DS_Store" />
+    <Content Include="Content\Fonts\flaticon\font\.DS_Store" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="Content\Fonts\flaticon\font\Flaticon.woff2" />
+    <Content Include="Content\Fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="Content\Fonts\flaticon\license\license.pdf" />
+    <Content Include="Content\Fonts\icomoon\icomoon.eot" />
+    <Content Include="Content\Fonts\icomoon\icomoon.ttf" />
+    <Content Include="Content\Fonts\icomoon\icomoon.woff" />
+    <Content Include="Content\Fonts\ionicons\css\_ionicons.scss" />
+    <Content Include="Content\Fonts\ionicons\fonts\.DS_Store" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.eot" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.ttf" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.woff" />
+    <Content Include="Content\Fonts\ionicons\fonts\ionicons.woff2" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.eot" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.otf" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.ttf" />
+    <Content Include="Content\Fonts\open-iconic\open-iconic.woff" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
@@ -194,6 +243,11 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202004032253101_Initial.resx">
+      <DependentUpon>202004032253101_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -225,7 +279,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

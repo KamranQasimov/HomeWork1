@@ -184,6 +184,22 @@
     <Compile Include="Migrations\202004032253101_Initial.designer.cs">
       <DependentUpon>202004032253101_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004101900573_Some changes in Author class.cs" />
+    <Compile Include="Migrations\202004101900573_Some changes in Author class.designer.cs">
+      <DependentUpon>202004101900573_Some changes in Author class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004101903457_Changes.cs" />
+    <Compile Include="Migrations\202004101903457_Changes.designer.cs">
+      <DependentUpon>202004101903457_Changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004101915599_About addet to resume class.cs" />
+    <Compile Include="Migrations\202004101915599_About addet to resume class.designer.cs">
+      <DependentUpon>202004101915599_About addet to resume class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004101936243_name added to Skill.cs" />
+    <Compile Include="Migrations\202004101936243_name added to Skill.designer.cs">
+      <DependentUpon>202004101936243_name added to Skill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -247,6 +263,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004032253101_Initial.resx">
       <DependentUpon>202004032253101_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004101900573_Some changes in Author class.resx">
+      <DependentUpon>202004101900573_Some changes in Author class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004101903457_Changes.resx">
+      <DependentUpon>202004101903457_Changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004101915599_About addet to resume class.resx">
+      <DependentUpon>202004101915599_About addet to resume class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004101936243_name added to Skill.resx">
+      <DependentUpon>202004101936243_name added to Skill.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

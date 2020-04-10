@@ -16,6 +16,7 @@ namespace HomeWork1.Data
         public Author Author { get; set; }
         [Required]
         public int AuthorId { get; set; }
+        public string Name { get; set; }
         
        
     }

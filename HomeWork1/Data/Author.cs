@@ -17,13 +17,13 @@ namespace HomeWork1.Data
         [Required]
         public string Surname { get; set; }
         [Required]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [Required]
         public string Address { get; set; }
         [Required]
         public DateTime BirthDate { get; set; }
         [Required]
-        public int ZipCode { get; set; }
+        public string ZipCode { get; set; }
         [Required]
         public string Country { get; set; }
         [Required]

@@ -22,6 +22,7 @@ namespace HomeWork1.Data
         public DateTime WorkStart { get; set; }
         [Required]
         public DateTime WorkEnd { get; set; }
+        public string About { get; set; }
         
     }
 }

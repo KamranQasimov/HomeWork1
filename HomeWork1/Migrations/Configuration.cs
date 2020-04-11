@@ -65,22 +65,23 @@
                 Surname = "Qasimov",
                 PhoneNumber = "+994-51-573-72-22",
                 Address = "Baku, Sallaxani street, 7A",
-                BirthDate = DateTime.ParseExact("January 07,1996","MMMM dd,yyyy",CultureInfo.InvariantCulture),
+                BirthDate = DateTime.ParseExact("January 07,1996", "MMMM dd,yyyy", CultureInfo.InvariantCulture),
                 ZipCode = "AZ1000",
                 Country = "Azerbaijan",
                 Email = "kamranqasimov390@gmail.com",
                 CompletedProjects = 1,
-                CupsOfCoffee =2,
-                AwardsAmount =1,
+                CupsOfCoffee = 2,
+                AwardsAmount = 1,
                 Work = "Freelance web developer"
+
             });
             context.Resumes.AddOrUpdate(new Data.Resume
             {
-                Id =1,
+                Id = 1,
                 AuthorId = 1,
                 WorkName = "Web developer",
                 WorkPlace = "Somewhere",
-                WorkStart = DateTime.ParseExact("14.02.2019","dd.MM.yyyy",CultureInfo.InvariantCulture),
+                WorkStart = DateTime.ParseExact("14.02.2019", "dd.MM.yyyy", CultureInfo.InvariantCulture),
                 About = "Hello my site's quests. I worked as Web Developer nearly 1 year. I'll be happy if i can help you with problems in Web development."
             });
             context.Services.AddOrUpdate(new Data.Services
@@ -90,9 +91,9 @@
                 Name = "Web Development",
                 //Logopath = "pngwawe.png",
 
-            },new Data.Services
+            }, new Data.Services
             {
-                Id =2,
+                Id = 2,
                 AuthorId = 1,
                 Name = "App Development",
                 //Logopath = "pngwawe.png",
@@ -100,7 +101,7 @@
             }
             );
             context.Skills.AddOrUpdate(new Data.Skill
-        
+
             {
                 Id = 4,
                 AuthorId = 1,

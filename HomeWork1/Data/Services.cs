@@ -12,9 +12,9 @@ namespace HomeWork1.Data
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
+        
         public string Logopath { get; set; }
-        [Required]
+        
         public Author Author { get; set; }
         [Required]
         public int AuthorId { get; set; }

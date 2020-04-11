@@ -14,13 +14,13 @@ namespace HomeWork1.Data
         public string WorkName { get; set; }
         [Required]
         public string WorkPlace { get; set; }
-        [Required]
+        
         public Author Author { get; set; }
         [Required]
         public int AuthorId { get; set; }
         [Required]
         public DateTime WorkStart { get; set; }
-        [Required]
+        
         public DateTime WorkEnd { get; set; }
         public string About { get; set; }
         

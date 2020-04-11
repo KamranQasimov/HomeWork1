@@ -36,11 +36,11 @@ namespace HomeWork1.Data
         public int AwardsAmount { get; set; }
         [Required]
         public string Work { get; set; }
-        [Required]
+        
         public ICollection<Services> Services { get; set; }
-        [Required]
+        
         public ICollection<Skill> Skills { get; set; }
-        [Required]
+        
         public ICollection<Project> Projects { get; set; }
 
 

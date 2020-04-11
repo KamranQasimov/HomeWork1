@@ -12,7 +12,7 @@ namespace HomeWork1.Data
         public int Id { get; set; }
         [Required]
         public byte Percent { get; set; }
-        [Required]
+        
         public Author Author { get; set; }
         [Required]
         public int AuthorId { get; set; }

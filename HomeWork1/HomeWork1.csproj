@@ -200,6 +200,14 @@
     <Compile Include="Migrations\202004101936243_name added to Skill.designer.cs">
       <DependentUpon>202004101936243_name added to Skill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004102105115_Seed.cs" />
+    <Compile Include="Migrations\202004102105115_Seed.designer.cs">
+      <DependentUpon>202004102105115_Seed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004110631211_Some changes.cs" />
+    <Compile Include="Migrations\202004110631211_Some changes.designer.cs">
+      <DependentUpon>202004110631211_Some changes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -275,6 +283,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004101936243_name added to Skill.resx">
       <DependentUpon>202004101936243_name added to Skill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004102105115_Seed.resx">
+      <DependentUpon>202004102105115_Seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004110631211_Some changes.resx">
+      <DependentUpon>202004110631211_Some changes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

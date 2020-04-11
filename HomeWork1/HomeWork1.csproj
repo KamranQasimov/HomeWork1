@@ -170,6 +170,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenusController.cs" />
+    <Compile Include="Controllers\ResumesController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\SkillsController.cs" />
     <Compile Include="Data\Author.cs" />
     <Compile Include="Data\BlogDbContext.cs" />
     <Compile Include="Data\Menu.cs" />
@@ -207,6 +211,18 @@
     <Compile Include="Migrations\202004110631211_Some changes.cs" />
     <Compile Include="Migrations\202004110631211_Some changes.designer.cs">
       <DependentUpon>202004110631211_Some changes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004111631054_Home Controller.cs" />
+    <Compile Include="Migrations\202004111631054_Home Controller.designer.cs">
+      <DependentUpon>202004111631054_Home Controller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004111634255_problem fix.cs" />
+    <Compile Include="Migrations\202004111634255_problem fix.designer.cs">
+      <DependentUpon>202004111634255_problem fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004111721176_resume.cs" />
+    <Compile Include="Migrations\202004111721176_resume.designer.cs">
+      <DependentUpon>202004111721176_resume.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -257,6 +273,10 @@
     <Content Include="Content\Fonts\open-iconic\open-iconic.woff" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Menus\AllMenus.cshtml" />
+    <Content Include="Views\Resumes\AllResumes.cshtml" />
+    <Content Include="Views\Services\AllServices.cshtml" />
+    <Content Include="Views\Skills\AllSkills.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -267,6 +287,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Resume\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202004032253101_Initial.resx">
@@ -289,6 +310,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004110631211_Some changes.resx">
       <DependentUpon>202004110631211_Some changes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004111631054_Home Controller.resx">
+      <DependentUpon>202004111631054_Home Controller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004111634255_problem fix.resx">
+      <DependentUpon>202004111634255_problem fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004111721176_resume.resx">
+      <DependentUpon>202004111721176_resume.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

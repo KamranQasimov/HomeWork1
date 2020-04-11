@@ -1,0 +1,11 @@
+﻿@model List<HomeWork1.Data.Menu>
+<div class="collapse navbar-collapse" id="ftco-nav">
+    <ul class="navbar-nav nav ml-auto">
+        @foreach (var menu in Model)
+        {
+            <li class="nav-item"><a href="#@menu.Name-section" class="nav-link"><span>@menu.Name</span></a></li>
+
+        }
+
+    </ul>
+</div>

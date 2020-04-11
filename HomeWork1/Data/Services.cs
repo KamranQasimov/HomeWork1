@@ -13,7 +13,7 @@ namespace HomeWork1.Data
         [Required]
         public string Name { get; set; }
         
-        public string Logopath { get; set; }
+        //public string Logopath { get; set; }
         
         public Author Author { get; set; }
         [Required]

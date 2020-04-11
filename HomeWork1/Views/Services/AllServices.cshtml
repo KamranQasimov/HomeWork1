@@ -1,0 +1,15 @@
+﻿@model List<HomeWork1.Data.Services>
+@foreach (var service in Model)
+{
+    <div class="col-md-4 text-center d-flex ftco-animate">
+        <a href="#" class="services-1">
+            <span class="icon">
+                <i class="flaticon-analysis"></i>
+            </span>
+            <div class="desc">
+                <h3 class="mb-5">@service.Name</h3>
+            </div>
+        </a>
+    </div>
+}
+
